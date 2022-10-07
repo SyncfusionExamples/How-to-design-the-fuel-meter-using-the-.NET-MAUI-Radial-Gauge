@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:gauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
+             x:Class="FuelMeter.MainPage">
+    <StackLayout>
+        <gauge:SfRadialGauge x:Name="multiRangesGauge"
+                             HorizontalOptions="Center">
+            <gauge:SfRadialGauge.Axes>
+                <gauge:RadialAxis ShowAxisLine="False"
+                                  ShowLabels="False"
+                                  ShowTicks="False"
+                                  StartAngle="180"
+                                  EndAngle="0"
+                                 >
+                    <gauge:RadialAxis.Ranges>
+                        <gauge:RadialRange x:Name="range1"
+                                           StartValue="0"
+                                           EndValue="10"
+                                           WidthUnit="Factor"
+                                           StartWidth="0.035"
+                                           EndWidth="0.045"
+                                           Fill="Red">
+                        </gauge:RadialRange>
+                        <gauge:RadialRange x:Name="range2" StartValue="12"
+                                           EndValue="20"
+                                           WidthUnit="Factor"
+                                           StartWidth="0.045"
+                                           EndWidth="0.055"
+                                           Fill="Black">
+                        </gauge:RadialRange>
+                        <gauge:RadialRange  x:Name="range3" StartValue="22"
+                                           EndValue="30"
+                                           WidthUnit="Factor"
+                                           StartWidth="0.055"
+                                           EndWidth="0.065"
+                                           Fill="Black">
+                        </gauge:RadialRange>
+                        <gauge:RadialRange x:Name="range4" StartValue="32"
+                                           EndValue="40"
+                                           WidthUnit="Factor"
+                                           StartWidth="0.065"
+                                           EndWidth="0.075"
+                                           Fill="Black">
+                            </gauge:RadialRange>
+                        <gauge:RadialRange x:Name="range5"
+                                           StartValue="42"
+                                           EndValue="50"
+                                           WidthUnit="Factor"
+                                           StartWidth="0.075"
+                                           EndWidth="0.085"
+                                           Fill="Black">
+                        </gauge:RadialRange>
+
+                        <gauge:RadialRange x:Name="range6" StartValue="52"
+                                           EndValue="60"
+                                           WidthUnit="Factor"
+                                           StartWidth="0.085"
+                                           EndWidth="0.095"
+                                           Fill="Black">
+                        </gauge:RadialRange>
+                        <gauge:RadialRange  x:Name="range7" StartValue="62"
+                                           EndValue="70"
+                                           WidthUnit="Factor"
+                                           StartWidth="0.095"
+                                           EndWidth="0.105"
+                                            Fill="Black">
+                        </gauge:RadialRange>
+                        <gauge:RadialRange x:Name="range8" StartValue="72"
+                                           EndValue="80"
+                                           WidthUnit="Factor"
+                                           StartWidth="0.105"
+                                           EndWidth="0.115"
+                                           Fill="Black">
+                        </gauge:RadialRange>
+
+                        <gauge:RadialRange  x:Name="range9" StartValue="82"
+                                           EndValue="90"
+                                           WidthUnit="Factor"
+                                           StartWidth="0.115"
+                                           EndWidth="0.125"
+                                            Fill="Black">
+                        </gauge:RadialRange>
+                        <gauge:RadialRange  x:Name="range10" StartValue="92"
+                                           EndValue="100"
+                                           WidthUnit="Factor"
+                                           StartWidth="0.125"
+                                           EndWidth="0.135"
+                                            Fill="Black">
+                        </gauge:RadialRange>
+                    </gauge:RadialAxis.Ranges>
+                    <gauge:RadialAxis.Annotations>
+                        <gauge:GaugeAnnotation DirectionUnit="Angle"
+                                               VerticalAlignment="Start"
+                                               HorizontalAlignment="Center"
+                                               PositionFactor="0">
+                            <gauge:GaugeAnnotation.Content>
+                                <Image Source="fuel.jpg" Margin="0,0,0,50"
+                                       WidthRequest="30" HeightRequest="30" />
+                            </gauge:GaugeAnnotation.Content>
+                        </gauge:GaugeAnnotation>
+                        <gauge:GaugeAnnotation  DirectionUnit="Angle"
+                                                DirectionValue="0.5"
+                                                VerticalAlignment="End"
+                                               PositionFactor="0.9">
+                            <gauge:GaugeAnnotation.Content>
+                                <Label Text="F"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       FontSize="20" />
+                            </gauge:GaugeAnnotation.Content>
+                        </gauge:GaugeAnnotation>
+                        <gauge:GaugeAnnotation DirectionUnit="AxisValue"
+                                               DirectionValue="1"
+                                               VerticalAlignment="End"
+                                               HorizontalAlignment="Start"
+                                               PositionFactor="0.95">
+                            <gauge:GaugeAnnotation.Content>
+                                <Label Text="E"
+                                       Margin="0,5,0,0"
+                                       TextColor="Black"
+                                       FontAttributes="Bold"
+                                       FontSize="20" />
+                            </gauge:GaugeAnnotation.Content>
+                        </gauge:GaugeAnnotation>
+                    </gauge:RadialAxis.Annotations>
+
+                    <gauge:RadialAxis.Pointers>
+                        <gauge:NeedlePointer NeedleLengthUnit="Factor"
+                                             NeedleLength="0.85"
+                                             NeedleStartWidth="1"
+                                             NeedleEndWidth="7"
+                                             NeedleFill="Red"
+                                             Value="5"
+                                             ValueChanged="NeedlePointer_ValueChanged"
+                                             IsInteractive="True"
+                                             KnobSizeUnit="Factor"
+                                             KnobFill="Black"
+                                             KnobRadius="0.09">
+                        </gauge:NeedlePointer>
+                    </gauge:RadialAxis.Pointers>
+
+                </gauge:RadialAxis>
+            </gauge:SfRadialGauge.Axes>
+        </gauge:SfRadialGauge>
+    </StackLayout>
+</ContentPage>
