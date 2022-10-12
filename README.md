@@ -1,8 +1,8 @@
 # How to design the fuel meter using .NET MAUI Radial Gauge
 
-This article contains sample for how to design the fuel meter using the [Syncfusion .NET MAUI Radial Gauge](https://help.syncfusion.com/maui/radial-gauge/getting-started) control.
+This repository contains sample to design the fuel meter using the [Syncfusion .NET MAUI Radial Gauge](https://help.syncfusion.com/maui/radial-gauge/getting-started) control.
 
-Please refer the KB through this [link]().
+Please refer the KB through this [link](https://www.syncfusion.com/kb/13673/how-to-design-the-fuel-meter-using-the-net-maui-radial-gauge-sfradialgauge).
 
 ## Syncfusion controls
 
